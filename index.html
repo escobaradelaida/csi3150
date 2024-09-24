@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--contains all metadata, this is where outside files (CSS, JS, API CDN links should be contained)-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo Page</title>
+    <!-- link for webiste icon image at top of the page -->
+    <link
+      rel="shortcut icon"
+      href="./assets/img/Lepi.ico"
+      type="image/x-icon"
+    />
+    <!-- link for css -->
+    <link rel="stylesheet" href="css/style-tutorial.css" />
+    <!-- links js. the reason you use ../ is because that takes you back to the 'root' of the current place where the file 
+     is located. More .. is one more directory backwards -->
+    <style>
+      /* not reccomended, use external style sheet instead of
+      doing it within the html document  */
+    </style>
+
+    <script src="./js/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <!-- this is a comment in html 5 -->
+      <!-- Division of the title -->
+      <div>
+        <h1 id="primary-heading" class="heading-group">Title</h1>
+        <h2 id="secondary-heading" class="heading-group">
+          This is my subtitle
+        </h2>
+      </div>
+      <!-- navigation menu -->
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#menu-item-about">About</a></li>
+          <li><a href="./html/semantic-html-example.html">Products</a></li>
+          <li>Contact Us</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Practice for wireframe with styling applied with CSS.
+     There are four containers, each divided into 2 sections vertically. It is them wrapped around in a 
+     larger container that encapsulates the four containers. Then flex will be applied, defaulting horizontally.
+     There is an element container that contains a subcontainer that has the header. Then another larger
+     container (section) encapsulated everthing (?)-->
+      <section class="news-event"></section>
+      <div class="section-title">
+        <h3 class="section-title">News Events</h3>
+      </div>
+      <div class="media-wrapper">
+        <div class="news-container">
+          <div class="news-media">
+            <img src="./assets/img/Lepi.JPG" alt="Event 1" class="news-images">
+          </div>
+          <div class="news-text">
+            <a href="http://www.oakland.edu"><h3>Cat Eats Entire Village</h3></a>
+          </div>
+        </div>
+        <div class="news-container">
+           <div class="news-media"></div>
+            <img src="./assets/img/Lepi.JPG" alt="Event 1" class="news-images">
+          </div>
+          <div class="news-text">
+            <a href="http://www.oakland.edu"><h3>Cat Eats Entire Village</h3></a>
+          </div>
+        </div>
+        <div class="news-container">
+           <div class="news-media"></div>
+            <img src="./assets/img/Lepi.JPG" alt="Event 1" class="news-images">
+          </div>
+          <div class="news-text">
+            <a href="http://www.oakland.edu"><h3>Cat Eats Entire Village</h3></a>
+          </div>
+        </div>
+        <div class="news-container">
+           <div class="news-media"></div>
+            <img src="./assets/img/Lepi.JPG" alt="Event 1" class="news-images">
+          </div>
+          <div class="news-text">
+            <a href="http://www.oakland.edu"><h3>Cat Eats Entire Village</h3></a>
+          </div>
+        </div>
+      </div>
+    </section>
+      <!-- Division of the overview paragraph -->
+      <div>
+        <h3>Overview</h3>
+        <span>This is a statement inside an inline tag </span>
+        <span>This is a second statement inside an inline tag</span>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, vitae
+          distinctio, sapiente maiores et aliquam quaerat architecto maxime sit
+          ea est deserunt nam nisi, corrupti autem quia suscipit illo ullam.
+        </p>
+      </div>
+      <!-- Division for significance paragraph -->
+      <div class="container-element">
+        <h3>Significance</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
+          quisquam unde inventore pariatur voluptatibus consequatur alias at
+          repellat illum eos accusamus, ratione similique officia hic voluptatem
+          vel eius expedita. A.
+        </p>
+      </div>
+
+      <!-- image embedding, hyperreferencing, lists, multimedia files, table data-->
+      <!-- html attributes; id, class, src, href, alt -->
+      <div>
+        <!-- insert image in html document, this image is contained within an asset -->
+        <img
+          src="./assets/img/Lepi.JPG"
+          width="400px"
+          height="700px"
+          alt="A Picture of My Cat, Lepi"
+        />
+        <!-- insert image in html document, this image is found online and referenced through a link. Using % resolves the size
+       relative to the page instead of a set amount of pixels -->
+        <img
+          src="https://images.pexels.com/photos/1472999/pexels-photo-1472999.jpeg"
+          width="50%"
+          height="50%"
+          alt="This is an image of a cat smelling a flower."
+        />
+
+        <hr />
+        <br />
+        <!-- example of an ordered list -->
+        <ol>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+        </ol>
+
+        <br />
+        <hr />
+
+        <!-- example of an unordered list -->
+        <!-- About menu item should navigate to this unordered list -->
+        <ul id="menu-item-about">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+        </ul>
+
+        <!-- hyperrefrencing using anchor, can refer to another website, etc -->
+        <a href="http://www.oakland.edu">Click here</a>
+        <span> to visit Oakland University homepage.</span>
+        <a href="mailto:sen@oakland.edu">Email Prof Sen</a>
+      </div>
+
+      <hr />
+      <br />
+
+      <!--multimedia files, audio and video-->
+
+      <audio src="./assets/audio/001 - Fire Emblem Theme.mp3" controls>
+        Your browser does not support the audio format.
+        <!-- using multiple source to change video resolution/preferences for user hardware-->
+        <!-- <source src="" type="" ></source> -->
+      </audio>
+
+      <video
+        controls
+        src="./assets/video/file_example_MOV_1280_1_4MB.mov"
+        width="200"
+        height="200"
+      >
+        Your browser does not support the video format.
+      </video>
+      <br />
+
+      <!-- to create tabular content-->
+      <table>
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>gpa</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>Wick</td>
+            <td>3.79</td>
+          </tr>
+          <tr>
+            <td>Jane</td>
+            <td>Doe</td>
+            <td>3.89</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Avg Gpa</td>
+            <td></td>
+            <td>3.84</td>
+          </tr>
+        </tfoot>
+      </table>
+      <br />
+      <!-- getting input from users: IMPORTANT!!!!!!-->
+      <!-- html forms > input fields (buttons, check buttons, wrap inputs inside a form and send to server)-->
+
+      <!--form element -->
+      <form action="#" method="get">
+        <!-- fields to take input -->
+        <label for="user-email">Enter your Email: </label>
+        <input
+          placeholder="abc@email.com"
+          type="email"
+          name="user-email"
+          id="user-email"
+        />
+        <br />
+        <label for="user-password">Enter your password: </label>
+        <input type="password" name="user-password" id="user-password" />
+        <br />
+        <input
+          type="checkbox"
+          name="test-checkbox"
+          value="Coffee"
+          id="test-checkbox"
+        />
+
+        <label for="test-checkbox">Coffee</label>
+        <br />
+        <button type="submit">Submit information</button>
+        <!-- can also do a reset button  -->
+      </form>
+
+      <section class="input-tutorials">
+        <!--tutorial for radio btns present multiple options, but select only one-->
+        <!--the name attribute for all radio buttons should be the same-->
+        <!--the value and id of each button will be different-->
+        <p>Select your favorite pet....</p>
+        <input type="radio" name="pet" id="dogs" value="Dogs" />
+
+        <label for="dogs">Dogs</label>
+        <br />
+        <input type="radio" name="pet" id="cats" value="Cats" />
+
+        <label for="cats">Cats</label>
+        <br />
+        <input type="radio" name="pet" id="birds" value="Birds" />
+
+        <label for="birds">Birds</label>
+        <br />
+        <!--checkboxes allow users to select multiple options presented-->
+        <!--name, value, and id for checkboxes will ALL be different in this example-->
+
+        <p>Select from the following programming languages....</p>
+        <input type="checkbox" name="java" id="java" value="java" />
+        <label for="dogs">Java</label>
+
+        <br />
+        <input type="checkbox" name="python" id="python" value="python" />
+        <label for="cats">Python</label>
+
+        <br />
+        <input type="checkbox" name="c" id="c" value="c" />
+        <label for="birds">C</label>
+        <hr />
+        <br />
+
+        <!--select from multiple option input type-->
+        <!-- select and option -->
+        <!-- drop down menus! -->
+
+        <label for="states">Choose your midwest state</label>
+        <select name="states" id="states">
+          <option value="">Select a state</option>
+          <option value="MI">Michigan</option>
+          <option value="OH">Ohio</option>
+          <option value="IL">Illinois</option>
+        </select>
+      </section>
+    </main>
+    <footer><br />Footer Content</footer>
+  </body>
+</html>
